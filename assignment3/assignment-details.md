@@ -176,16 +176,5 @@ Create a JavaScript function expression that meets the following requirements:
 
 ---
 
-## 7. Marking Rubric
-
-* **40%** Code and Functionality
-* **40%** Logic
-* **20%** Best Practices
-  * Descriptive variable/function names using camelCase
-  * Use `let`/`const` instead of `var`
-  * Avoid global variables
-  * Consistent and clean coding style
-
----
 
 **GOOD LUCK!**
