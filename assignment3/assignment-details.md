@@ -122,18 +122,22 @@ Create a JavaScript function that meets the following requirements:
 
 ### Function 5: `breakAway(array, n)`
 
-* Function expression.
-* Accepts array of integers and chunk size `n`.
-* Splits the array into subarrays of length `n`.
-* Last subarray may be shorter.
+Create a JavaScript function expression that meets the following requirements:
+* Authored using **function expression** syntax (with constant name **breakAway**)
+* Accepts an array of integers as the first argument, and a single integer as the second argument (n).
+* The function divides the array into chunks of size n, where n is the length of each created (divided) array
+* It is possible that the last array created is not completely filled (see example 2 below)
+* The integers provided in the array argument, and for the value of n, are **always** single-digit integers.
+  * validation is **not** required for this single-digit assumption.
+* The function returns an array containing the array groupings back to the caller.
 
-**Example Outputs:**
-
-```javascript
-breakAway([2,3,4,5], 2) → [[2,3],[4,5]]
-breakAway([2,3,4,5,6], 2) → [[2,3],[4,5],[6]]
-breakAway([2,3,4,5], 1) → [[2],[3],[4],[5]]
-```
+  ```javascript
+  _breakAway([2,3,4,5], 2) → [ [2,3],[4,5] ]
+  _breakAway([2,3,4,5,6], 2) → [ [2,3],[4,5],[6] ]
+  _breakAway([2,3,4,5,6,7], 3) → [ [2,3,4],[5,6,7] ]
+  _breakAway([2,3,4,5], 1) → [ [2],[3],[4],[5] ]
+  _breakAway([2,3,4,5,6,7], 7) → [ [2,3,4,5,6,7] ]
+  ```
 
 ---
 
