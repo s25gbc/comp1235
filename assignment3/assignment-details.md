@@ -160,9 +160,6 @@ Create a JavaScript function expression that meets the following requirements:
    * Provided template file.
    * Properly reference your JavaScript file.
    * Uncomment **remote** test script and comment **local** script after local testing.
-3. `tests.js`
-
-   * Used to create your own unit tests.
 
 ### Upload to:
 
