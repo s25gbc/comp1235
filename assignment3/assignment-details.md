@@ -161,10 +161,9 @@ Create a JavaScript function expression that meets the following requirements:
    * Properly reference your JavaScript file.
    * Uncomment **remote** test script and comment **local** script after local testing.
 
-### Upload to:
+### How to Submit:
 
-* `my.gblearn.com → comp1235/assignment 3`
-* `public_html/comp1235/assignments/assignment3/`
+* Please see D2L for Submission instructions
 
 ### Plagiarism Warning:
 
