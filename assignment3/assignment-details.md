@@ -61,56 +61,62 @@ Create a JavaScript function that meets the following requirements:
 ---
 
 ### Function 2: `calculateSalary(array)`
+Create a JavaScript function that meets the following requirements:
+* Authored using arrow expression syntax (constant name calculateSalary)
+* Is passed an array of integers, that is ordered from Monday to Sunday
+* Every element in the array can be safely assumed to be greater than or equal to 0.
+* The function internally must utilize the Array.prototype.reduce() function where the reducer function calculates and returns the calculated total gross weekly salary using the following formula:
+  * A worker earns $10 an hour for the first 8 hours
+  * For every extra hour worked per day, they earn $15 for each added
+  * On weekends, the employer pays double the usual rate, regardless of how many hours worked
+    * 10 hours worked on a weekday would pay $80 + $30 = $110
+    * 10 hours worked on a weekend would pay $160 + $60 = $220
+* The function must pass the following tests at a minimum:
 
-* Arrow function.
-* Takes an array of 7 integers (Mon-Sun hours).
-* Uses `Array.prototype.reduce()`.
-* Rules:
-
-  * Weekdays: \$10/hour for first 8 hours, \$15/hour after.
-  * Weekends: double rate on all hours.
-
-**Example Outputs:**
-
-```javascript
-calculateSalary([8,8,8,8,8,0,0]) → 400
-calculateSalary([10,10,10,0,8,0,0]) → 410
-calculateSalary([0,0,0,0,0,12,0]) → 280
-```
+  ```javascript
+  calculateSalary([8,8,8,8,8,0,0]) → 400
+  calculateSalary([10,10,10,0,8,0,0]) → 410
+  calculateSalary([0,0,0,0,0,12,0]) → 280
+  ```
 
 ---
 
 ### Function 3: `indexMultiplier(array)`
+Create a JavaScript Arrow function that meets the following requirements:
 
-* Arrow function.
-* Uses `Array.prototype.reduce()`.
-* Returns sum of each element multiplied by its index.
+* Authored using arrow expression syntax (constant name indexMultiplier())
+* The function is passed an array of numbers
+* The function returns the sum of all items in the array where each item is multiplied by its index
+* The function internally must use the Array.prototype.reduce() function to solve this problem.
+* The function must pass the following tests at a minimum:
 
-**Example Outputs:**
-
-```javascript
-indexMultiplier([1, 2, 3, 4, 5]) → 40
-indexMultiplier([-3, 0, 8, -6]) → -2
-indexMultiplier([15, 16, -100, 50]) → -34
-```
+  ```javascript
+  indexMultiplier([1, 2, 3, 4, 5]) → 40
+  indexMultiplier([-3, 0, 8, -6]) → -2
+  indexMultiplier([15, 16, -100, 50]) → -34
+  ```
 
 ---
 
 ### Function 4: `filteredJSON(array)`
 
-* Arrow function.
-* Filters and returns a new array based on these rules:
+Create a JavaScript function that meets the following requirements:
+* Authored using arrow expression syntax (constant name filteredJSON())
+* Is passed an array of JSON elements
+  * The function filters the input array
+  * The function returns a new array that contains only those elements in the source whose:
+    * id is greater than 10
+    * **AND**
+    * whose username starts with a character within the range [M-Z] (second half of alphabet)
+      * ignore case-sensitivity
+* The function internally must utilize the Array.prototype.filter()
+* The function must pass the following tests at a minimum:
 
-  * `id` > 10
-  * `username` starts with \[M-Z] (case-insensitive)
-* Uses `Array.prototype.filter()`
-
-**Example Outputs:**
-
-```javascript
-filteredJSON([{id: 1, u: "batman"}]) → []
-filteredJSON([{id: 11, u: "spidey"}]) → [{id: 11, u: "spidey"}]
-```
+  ```javascript
+  filteredJSON([{id: 1, u: "batman"}]) → []
+  filteredJSON([{id: 11, u: "spidey"}]) → [{id: 11, u: "spidey"}]
+  filteredJSON([{id: 1, u: "batman"}, {id: 11, u: "spidey"}]) → [{id: 11, u: "spidey"}]
+  ```
 
 ---
 
