@@ -140,17 +140,8 @@ Create a JavaScript function expression that meets the following requirements:
   ```
 
 ---
-
-## 6. Submission Procedure and Rules
-
-### Do Not Include:
-
-* `document.write()`
-* `innerHTML()`
-* `alert()`
-* Excessive `console.log()`
-
-### Files to Submit:
+### To Optionally view Test Running on GBLearn:
+Optionally upload the following 2 files to GBLearn under the path public_html/comp1235/assignments/assignment3 to see your remote tests running.
 
 1. `solution.js`
 
