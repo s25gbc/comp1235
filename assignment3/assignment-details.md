@@ -152,7 +152,7 @@ Create a JavaScript function expression that meets the following requirements:
 
 ### Files to Submit:
 
-1. `<STUDENT_ID>-problems.js`
+1. `solution.js`
 
    * Contains your 5 function implementations.
 2. `index.html`
