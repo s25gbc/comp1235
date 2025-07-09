@@ -154,7 +154,7 @@ Optionally upload the following 2 files to GBLearn under the path public_html/co
 
 ### How to Submit:
 
-* Please see D2L for Submission instructions
+* Please see the link in the GitHub classroom for Submission instructions
 
 ### Plagiarism Warning:
 
