@@ -38,7 +38,7 @@ Create a JavaScript function that meets the following requirements:
 - In the promise, write a `setTimeout()` that will:
   - resolve the promise with a random number after .5 seconds
 - The random number should be within the range 1-5
-- To test this in your unit test, please review the chai assertion library for you can range testing (`to.be.closeTo()`) – [Chai Documentation](https://www.chaijs.com/api/bdd/)
+- To test this in your unit test, please review the chai assertion library for you can range testing (`to.be.within()`) – [Chai Documentation](https://www.chaijs.com/api/bdd/)
 - The function should pass the illustrated test examples below at a minimum.
 
 **Expected Output:**
@@ -48,24 +48,25 @@ getRandomNumber() → returns a random number between 1-5
 
 ---
 
-## Async Function 2: Get City Data
+## Async Function 2: get Nationality
 
-### `getCityData(city)`
+### `getNationality(name)`
 
 Create a JavaScript function that meets the following requirements:
 
-- Write an asynchronous function (using async/await) called `getCityData` that returns a promise
-- The function takes 1 parameter (string representing the name of a city)
-- When invoked the function should retrieve the data associated with the city, calling the URL with the following URL / URL pattern:
-  - `https://geocode.xyz/city?json=1`
-  - **PLEASE NOTE** → replace city with the city being queried
-  - You will need to use a fetch to call the geocode json api
-- Once retrieved, test the data contains the cities longitude co-ordinate
+- Write an asynchronous function (using async/await) called `getNationality` that returns a promise
+- The function takes 1 parameter (string representing the name)
+- When invoked the function should retrieve the data associated with the name, calling the URL with the following URL / URL pattern:
+  - `https://api.nationalize.io/?name=${name}`
+  - You will need to use a fetch to call the nationalize.io json api
+- Once retrieved, test the data contains the most probable nationality of the someone with this name
 - The function should pass the illustrated test examples below at a minimum.
 
 **Expected Output:**
 ```javascript
-getCityData("Toronto").longt → -79.41946
+getNationality("Daniil") → "GR"
+getNationality("Laily") → "ID"
+getNationality("Mark") → "CN"
 ```
 
 ---
