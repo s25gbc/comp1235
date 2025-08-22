@@ -130,7 +130,7 @@ searchStoreProduct("refied beans")         → 0.99
 Create a JavaScript function expression that meets the following requirements:
 
 - Write an asynchronous function (using async/await) called `getStarWarsCharacters`
-- When invoked the function will make a call to the Star War API (`https://swapi.dev/api/people/`)
+- When invoked the function will make a call to the Star War API (`https://swapi.py4e.com/api/people/`)
 - Once the Star Wars data is retrieved, you are to:
   - Create new json collection with the data
   - The key for each element json element in the collection, is the character's name
@@ -141,9 +141,9 @@ Create a JavaScript function expression that meets the following requirements:
 
 **Expected Output:**
 ```javascript
-getStarWarsCharacters().characters["R2-D2"]          → "https://swapi.dev/api/people/3/"
-getStarWarsCharacters().characters["C-3PO"]          → "https://swapi.dev/api/people/2/"
-getStarWarsCharacters().characters["Luke Skywalker"] → "https://swapi.dev/api/people/1/"
+getStarWarsCharacters().characters["R2-D2"]          → "https://swapi.py4e.com/api/people/3/"
+getStarWarsCharacters().characters["C-3PO"]          → "https://swapi.py4e.com/api/people/2/"
+getStarWarsCharacters().characters["Luke Skywalker"] → "https://swapi.py4e.com/api/people/1/"
 ```
 
 ---
